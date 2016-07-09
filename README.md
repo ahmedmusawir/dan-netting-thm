@@ -1,2 +1,2 @@
-# dan-netting-thm
-Theme For Dan Netting - Tiana Client
+# tiana-thm
+A Custom Theme for Tiana Gustafson
