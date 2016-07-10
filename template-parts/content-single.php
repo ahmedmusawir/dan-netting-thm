@@ -142,26 +142,28 @@
 	=            The Related Post Block            =
 	=======================================-->
 	
+<?php wp_reset_query(); ?>
 
 <?php 
 $current_categories = get_the_category();
 // $first_category = $current_categories[0]->term_id;
 
 $args = array(
-	'post_per_page' => 3,
-	// 'category__in' => array( $first_category ), //if you need specific category
-	'category__in' => array( $current_categories ),
+	'posts_per_page' => 3,
 	'post__not_in' => array( $post->ID )
 );	
 
 $related_post_items = new WP_Query($args);
+
 ?>
 
 	<section id="single-related-post-block">
 				
 		<article class="post-content">
 
-					<h4>RELATED POSTS ...</h4>
+			<h4>RELATED POSTS ...</h4>
+
+
 
 		<?php if ( $related_post_items->have_posts() ) : ?>
 			<?php while ( $related_post_items->have_posts() ) : $related_post_items->the_post(); ?>					

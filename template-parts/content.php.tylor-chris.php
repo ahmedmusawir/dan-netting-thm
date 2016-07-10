@@ -13,7 +13,7 @@
 
 	<section class="container-fluid">
 		
-		<div class="featured-img-container col-sm-4 col-md-4 col-lg-4">
+		<div class="featured-img-container col-sm-6 col-md-6 col-lg-6">
 
 			<?php if ( has_post_thumbnail() ) : ?> 
 				
@@ -33,7 +33,7 @@
 			
 		</div>
 
-		<div class="featured-txt-container col-sm-8 col-md-8 col-lg-8">
+		<div class="featured-txt-container col-sm-6 col-md-6 col-lg-6">
 
 			<header class="entry-header">
 				<?php

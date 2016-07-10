@@ -4,9 +4,7 @@ $brand-primary:  #5FC5BF;
 // $brand-primary: #FF8300;
 // $brand-primary: lighten( #be8706, 10% );
 // $tiana-primary: #383D66;
-// $tiana-primary: #F3918D;
-$dan-light-blue: #f2f6f7;
-$tiana-primary: #6fa842;
+$tiana-primary: #F3918D;
 $tiana-black: black;
 $tiana-white: $smoke;
 $tiana-teal: #F3918D; //this is tylor red
@@ -22,7 +20,6 @@ $tiana-red: #bb324a;
 // @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
 // @import url(https://fonts.googleapis.com/css?family=Bevan);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
 // @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 // @import url(https://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic);
 // @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
@@ -34,26 +31,22 @@ html {
 body {
 
 	font-family: 'Raleway', sans-serif;
-	// padding-top: 85px;
+	padding-top: 85px;
 
 	h1, h2, h3, h4, h5, h6 {
-		// color: $tiana-primary !important;
+		color: $tiana-primary !important;
 	}
 
-	@media ( min-width: 992px ) {
-		padding-top: 100px;
+	@media ( max-width: 1130px ) {
+		padding-top: 85px;
 	}
-	@media ( max-width: 991px ) {
-		padding-top: 135px;
-	}
-	@media (max-width: 767px ) {
+
+	@media (max-width: 768px ) {
 		padding-top: 80px;
 	}
-	@media (max-width: 554px ) {
-		padding-top: 135px;
-	}
+
 	@media (max-width: 450px ) {
-		padding-top: 130px;
+		padding-top: 90px;
 	}	
 
 }
@@ -123,8 +116,8 @@ body {
 } 
 
 .navbar {
-// display: none;
 
+	// border: 1px solid green;
 	border: 1px solid $gray-light;
 
 	padding-top: 2rem;
@@ -132,32 +125,38 @@ body {
 	background-color: $tiana-black;
 	box-shadow: 2px 2px 8px $gray-light;
 	margin-bottom: 0;
-	font-family: 'Oswald', sans-serif;
-	font-style: italic;
-	font-weight: 400;	
+	font-family: 'Raleway', sans-serif;
 
-	@media ( min-width: 1675px ) {
-		padding-bottom: 3rem;
-	}			
+	.header-social {
+		li {
+			display: inline-block;
+			margin-top: 1.5rem;
+
+			i {
+				font-size: 1.5rem;
+				padding-right: 1rem;
+
+				color: lighten( $tiana-primary, 10% );
+
+				&:hover {
+					color: white;
+				}
+			}
+
+		}
+	}
+
+	@media ( min-width: 1130px ) {
+	}
+	
 
 	.navbar-brand {
 		color: darken( $gray-lighter, 10% );
 
 		.logo {
 			
-			width: 70%;
-			margin-top: -5%;
-
-			@media ( min-width: 992px ) {
-				margin-top: 0;
-				width: 50%;
-			}
-
-			@media ( min-width: 1555px ) {
-				margin-top: -1.3rem;
-				width: 70%;
-			}
-
+			// border: 1px solid red;
+			margin-top: -3rem;
 		}
 	}
 	.navbar-toggle {
@@ -207,21 +206,6 @@ body {
 
 	#menu-menu-1 {
 
-		@media ( min-width: 992px ) {
-			margin-top: -3rem;
-		}
-		@media ( min-width: 1555px ) {
-			margin-top: -3.5rem;
-		}		
-		@media ( min-width: 1675px ) {
-			margin-top: 1rem;
-		}	
-	#menu-item-3075 {
-		a {
-			color: lighten( $tiana-primary, 10% );
-		}
-	}			
-
 		li {
 
 			&:hover {
@@ -229,31 +213,25 @@ body {
 				// background-color: lighten( $tiana-primary, 10% );
 			}
 			a {
-				color: darken( $tiana-white, 0% );
+				color: darken( $tiana-primary, 0% );
 				// color: darken( $gray-lighter, 15% );
 				font-size: 2rem;
-				// font-weight: 300;
+				font-weight: 300;
 				// border: 1px solid red;
 				&:hover {
-					color: $tiana-primary;
+					color: $tiana-white;
 				}
 
-				@media ( min-width: 992px ) {
+				@media ( max-width: 1200px ) {
 					font-size: 1.5rem;
 				}
-				@media ( min-width: 1200px ) {
-					font-size: 2rem;
-				}	
-				@media ( min-width: 1555px ) {
-					font-size: 2.5rem;
-				}										
 			}
 		}
 
 		.current-menu-item {
 
 			a {
-				color: lighten( $tiana-primary, 10% );
+				color: $tiana-white;
 				background-color: transparent;
 
 				&:hover {
@@ -261,8 +239,6 @@ body {
 				}
 			}
 		}
-
-
 	}
 }
 
@@ -309,10 +285,6 @@ img {
 				font-size: 1.8rem;
 				font-weight: 600;
 				border: 1px solid $tiana-black;
-
-				@media ( min-width: 768px ) and ( max-width: 991px ) {
-					margin-top: 2rem;
-				}
 			}
 		}
 	}
@@ -339,64 +311,106 @@ img {
  */
 #front-pg-header {
 	position: relative;
+	// z-index: -1;
+	
+	border-bottom: 1rem solid $tiana-primary;
+	margin-top: -.9rem;
 
-	.header-btn-box {
+	.header-img-container {
+		// position: relative;
 		position: absolute;
-		top: 27%;
-		left: 20%;
+		top: -50;
+		.header-txt-img {
 
-		.btn {
-			background-color: black;
-			border: 0px solid black;
-			font-family: 'Oswald', sans-serif;
-			font-style: italic;
-
-			@media ( min-width: 1180px ) {
-				padding-top: 2rem;
-				padding-bottom: 2rem;
-				padding-left: 4rem;
-				padding-right: 4rem;
-
-			}	
-			@media ( min-width: 1180px ) {
-				padding-top: 2rem;
-				padding-bottom: 2rem;
-				padding-left: 5rem;
-				padding-right: 5rem;
-				font-size: 3rem;
-			}										
 		}
-
-
-		@media ( min-width: 363px ) {
-			top: 30%;
-		}
-		@media ( min-width: 404px ) {
-			top: 35%;
-			left: 30%;
-		}		
-		@media ( min-width: 522px ) {
-			top: 40%;
-			left: 30%;
-		}	
-		@media ( min-width: 620px ) {
-			top: 45%;
-			left: 35%;
-		}	
-		@media ( min-width: 768px ) {
-			top: 45%;
-			left: 60%;
-		}	
-		@media ( min-width: 975px ) {
-			top: 55%;
-			left: 60%;
-		}	
-		@media ( min-width: 1180px ) {
-			top: 60%;
-			left: 60%;
-		}																	
 	}
 
+	.header-text-container {
+		// box-shadow: 0px 0px 3px lighten( $tiana-gray, 20% );
+
+		.header-text-box {
+
+			// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
+			// font-family: 'Muli', sans-serif;
+			font-family: 'Raleway', sans-serif;
+
+			position: absolute;
+			top: 70%;
+			left: 57%;
+
+			width: 250px;
+			height: 130px;
+			padding-left: 3rem;
+			padding-right: .5rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+
+					@media ( max-width: 1250px ) {
+						top: 65%;
+					}			
+					@media ( max-width: 850px ) {
+						top: 65%;
+						left: 50%;
+					}			
+					@media ( max-width: 767px ) {
+						top: 75%;
+						left: 25%;
+					}			
+					@media ( max-width: 438px ) {
+						top: 70%;
+						left: 20%;
+					}	
+					@media ( max-width: 400px ) {
+						top: 70%;
+						left: 10%;
+					}										
+
+			.header-btn-container {
+
+				padding-top: 5rem;
+				text-align: center;
+					@media ( max-width: 1099px ) {
+						padding-top: 2rem;
+					}	
+					@media ( max-width: 450px ) {
+						padding-top: 1rem;
+					}										
+
+				.btn.btn-success {
+					// height: 120px;
+					padding-left: 2rem;
+					padding-right: 2rem;
+					background-color: $tiana-red;
+					border: none;
+					font-size: 3.5rem;
+
+					&:hover {
+						background-color: darken( $tiana-primary, 0% );
+					}
+
+					@media ( max-width: 1550px ) {
+						font-size: 2.5rem;
+						// height: 80px;
+					}
+					@media ( max-width: 1250px ) {
+						font-size: 2rem;
+						// height: 50px;
+					}
+					@media ( max-width: 600px ) {
+						font-size: 1.2rem;
+						// height: 40px;
+					}					
+
+					@media ( max-width: 450px ) {
+						font-size: 1.5rem;
+						height: 100%;
+						width: 100%;
+					}					
+
+ 				}
+			}
+		}	
+	}
 } 
 
 /*=======================================
@@ -404,18 +418,21 @@ img {
 =======================================*/
 
 .above-blog-block-1 {
+
 	
 }
 
 .above-blog-block-2 {
 
+	// border: 1px solid blue;
 	min-height: 400px;
-	background: url('/wp-content/uploads/2016/07/background-transparent-awsome.jpg') fixed;	
+	// background-color: darken( $tiana-light-gray, 3% );
+	// @include background(linear-gradient(black, white) left repeat);
+	background-color: lighten( $tiana-black, 20% );	
 
 	.wrapper {
 
 		padding-top: 5rem;
-		padding-bottom: 5rem;
 		text-align: center;
 
 		a {
@@ -429,15 +446,13 @@ img {
 		}
 
 		h2 {
-			color: $tiana-black;
+			color: $tiana-primary;
 			font-size: 3.5rem;
 			font-weight: 700;
 			padding-top: 4rem;
 			padding-bottom: 1.8rem;
-			font-family: 'Oswald', sans-serif;
-			font-style: italic;
+			position: relative;
 
-			position: relative; //for the bottom border
 
 			&:before {
 			  content : "";
@@ -446,7 +461,7 @@ img {
 			  bottom  : 0;
 			  height  : 1px;
 			  width   : 40%;  /* or 100px */
-				border-bottom: .4rem solid $tiana-black;
+				border-bottom: .4rem solid $tiana-primary;
 			}
 
 		}
@@ -461,8 +476,8 @@ img {
 			padding-top: 5rem;
 
 			img {
-				// width: 80%;
-				// padding-left: 25%;
+				width: 80%;
+				padding-left: 25%;
 			}
 			.text-content {
 				text-align: center;
@@ -538,18 +553,8 @@ img {
 }
 
 .below-blog-block-2 {
-	min-height: 850px;	
+	// min-height: 400px;	
 	padding-top: 5rem;
-	background: url('/wp-content/uploads/2016/07/LifeAtLean1-block-3-bg.jpg') no-repeat center center fixed;	
-	  -webkit-background-size: cover;
-
-	  -moz-background-size: cover;
-
-	  -o-background-size: cover;
-
-	  background-size: cover;
-
-
 
 	.btn-holder {
 		padding-top: 4rem;
@@ -560,13 +565,12 @@ img {
 	h2 {
 		text-align: center;
 		color: $tiana-primary;
-		font-size: 4.5rem;
+		font-size: 3.5rem;
 		font-weight: 700;
 		padding-top: 4rem;
 		padding-bottom: 1.8rem;
 		position: relative;
-			font-family: 'Oswald', sans-serif;
-			font-style: italic;
+
 
 		&:before {
 		  content : "";
@@ -575,7 +579,7 @@ img {
 		  bottom  : 0;
 		  height  : 1px;
 		  width   : 40%;  /* or 100px */
-			border-bottom: .4rem solid $tiana-primary;
+			border-bottom: .4rem solid $tiana-teal;
 		}
 
 	}
@@ -705,10 +709,9 @@ img {
 			font-family: 'Raleway', sans-serif;
 			text-transform: uppercase;
 			
-			font-size: 2rem;
+			font-size: 2.2rem;
 			font-weight: 700;
-			margin-top: -1rem;
-			// border: 1px solid red;
+			padding-top: 0rem;
 
 			a {
 				color: lighten( $tiana-black, 30% );
@@ -770,7 +773,7 @@ img {
 		p {
 			font-family: 'Raleway', sans-serif;
 
-			font-size: 1.4rem;
+			font-size: 1.8rem;
 			font-variant: 500;
 			color: lighten( $tiana-gray, 25% );
 			padding-top: 2rem;
@@ -1079,7 +1082,6 @@ img {
 .praise-block {
 	// border: 1px solid red;
 	margin-top: 4rem;
-	background: url('/wp-content/uploads/2016/07/background-transparent-awsome.jpg') fixed;	
 	// @include background(linear-gradient( rgba( $silver, .8 ), rgba( $tiana-primary, .5 ) ) left repeat);
 	@include transition(all .5s ease-in-out);
 	padding-top: 3rem;
@@ -1103,7 +1105,7 @@ img {
 	}
 
 	&:hover, &:active {
-		background: $tiana-primary;
+		background-color: $tiana-primary;
 
 		.icon-praise {
 			i {
@@ -1399,42 +1401,6 @@ img {
 		}
 	}
 
-/**
- *
- * Image Sidebar Widget
- *
- */
-#img-sidebar-widget {
-
-
-	img {
-		border: 1.5rem solid black;
-	}
-	h5 {
-		font-size: 2.5rem;
-		font-weight: 500;
-		text-align: center;
-	}
-	.sidebar-social {
-
-		margin-top: 2rem;
-		text-align: center;
-
-
-		li {
-			display: inline-block;
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;
-			background-color: $tiana-primary;
-
-			i {
-				font-size: 2.5rem;
-				// padding-left: .5rem;
-			}
-		}
-	}
-}
 
 	// Widget icons
 
@@ -1621,7 +1587,7 @@ img {
  */
 
 .footer-container {
-	background: url("/wp-content/uploads/2016/06/footer-bg.jpg") fixed;
+	background: url("/wp-content/uploads/2016/06/footer-bg.jpg");
 
 }
 #footer-main {
@@ -1684,28 +1650,19 @@ img {
 	#menu-menu-2 {
 
 		text-align: center;
-
-		.courses {
-			a {
-				color: lighten( $tiana-primary, 15% );
-
-			}
-		}
-
 		li {
 			display: inline-block;
 			background-color: transparent;
 			border-bottom: 0px solid red;
 
 			a {
-				font-family: 'Oswald', sans-serif;
-				font-style: italic;				
-				font-size: 2.5rem;
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 1.5rem;
 				font-weight: 600;	
-				color: $tiana-white;
+				color: $tiana-primary;
 
 				&:hover {
-					color: lighten( $tiana-primary, 10% );
+					color: $tiana-white;
 				}
 			}
 		}
@@ -1713,27 +1670,16 @@ img {
 
 	.footer-social {
 		padding-top: 2rem;
-		text-align: center;
-
-
 
 		li {
-			width: 50px;
-			height: 50px;
-			display: inline-block;
-
 			border-radius: 50%;
-			background-color: $tiana-primary;
-			border: 1px solid $tiana-primary;
+			background-color: $tiana-black;
+			border: 1px solid $tiana-black;
 
 			i {
 				font-size: 2.3rem;
 				color: white;
-				&:hover {
-					color: black;
-				}
 			}
-
 		}
 	}
 }

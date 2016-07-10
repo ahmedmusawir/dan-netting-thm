@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages.
- *
+ * Template Name: Testimonials 
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -14,7 +14,7 @@
 
 get_header(); ?>
 <section class="container">
-<!-- <h1>I am real praise</h1> -->
+<!-- <h1>I am real praise Moose</h1> -->
 	<div id="primary" class="content-area col-md-8 col-lg-8">
 	
 		<main id="main" class="site-main" role="main">

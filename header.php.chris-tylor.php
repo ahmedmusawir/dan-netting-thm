@@ -26,7 +26,6 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'moose-frame' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-
 		<div class="header-logo-social container-fluid">
 			<?php
 			    // $front_header_image = get_field('front_header_image', 6); // 1476 is post id                               
@@ -50,17 +49,21 @@
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			        </button>
-			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-			    	<span>
-			    		<img class="logo img-responsive hidden-xs" src="/wp-content/uploads/2016/07/logo-lean.jpg" alt="">
-			    		<img class="logo img-responsive visible-xs" src="/wp-content/uploads/2016/07/logo-mobile.jpg" alt="">
-			    	</span> 
-			    </a>
+			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span><img class="logo" src="/wp-content/uploads/2016/06/TyloreCLogoFinal-200.png" alt=""></span> </a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse navbar-ex1-collapse">
 					
+					<ul class="header-social pull-right">
+						<li><a target="_blank" href="https://www.facebook.com/tianagustafson/?fref=ts"><i class="fa fa-facebook fa-2x"></i></a></li>				
+						<li><a target="_blank" href="https://www.instagram.com/freedom_planner/"><i class="fa fa-instagram fa-2x"></i></a></li>				
+						<li><a target="_blank" href="https://www.pinterest.com/tianastar/"><i class="fa fa-pinterest fa-2x"></i></a></li>				
+						<li><a target="_blank" href="https://www.youtube.com/user/coffeeshopgrrrl "><i class="fa fa-twitter fa-2x"></i></a></li>				
+						<!-- <li><a target="_blank" href="https://www.linkedin.com/in/tianastar"><i class="fa fa-linkedin fa-2x"></i></a></li>				 -->
+					</ul>
+
+			    	
 			        <?php
 				        wp_nav_menu( array(
 				            'theme_location' => 'primary',
@@ -92,19 +95,24 @@
 
 		<?php if ( is_home() || is_single() || is_archive() || is_search() || is_404() ) : ?>
 			<!-- <img class="img-responsive hidden-xs" src="<?php echo $front_header_image; ?>" alt="tiana img"> -->
-			<img class="img-responsive hidden-xs" src="/wp-content/uploads/2016/07/header-image.jpg" alt="">
-			<img class="img-responsive visible-xs" src="/wp-content/uploads/2016/07/header-image-mobile.jpg" alt="">
-			<article class="header-btn-box">
-				<a class="btn btn-lg btn-success" href="#">SIGN UP NOW</a>
-			</article>
+			<img class="img-responsive" src="/wp-content/uploads/2016/06/TyloreCHeaderFinal-1920.jpg" alt="">
 
+	
+		<?php else : ?>
+			<img class="img-responsive" src="/wp-content/uploads/2016/06/TyloreCHeaderFinal-1920.jpg" alt="">
+			<!-- <img class="img-responsive" src="<?php echo $page_header_image; ?>" alt="tiana img"> -->
+		<?php endif; ?>
+	
+
+	</header>
+	
 	<section class="top-form-bar">
 		<div class="container">
 			<article class="form-bar-content-holder">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 					<div class="form-bar-left-block">
-						<h2 class="form-bar-left-text">Sign Up and Get my POWER PROJECT For Free</h2>
-						<!-- <img class="img-responsive center-block" src="/wp-content/uploads/2016/06/Screen-Shot-2016-06-24-at-2.43.19-PM.png" alt=""> -->
+						<!-- <h2 class="form-bar-left-text">Sign Up and Get my POWER PROJECT For Free</h2> -->
+						<img class="img-responsive center-block" src="/wp-content/uploads/2016/06/Screen-Shot-2016-06-24-at-2.43.19-PM.png" alt="">
 					</div>
 					<div class="form-bar-right-block">
 						<div class="form-bar-right-form-holder">
@@ -129,19 +137,6 @@
 		</div>
 	</section>
 
-
-	
-		<?php else : ?>
-			<img class="img-responsive hidden-xs" src="/wp-content/uploads/2016/07/header-image.jpg" alt="">
-			<img class="img-responsive visible-xs" src="/wp-content/uploads/2016/07/header-image-mobile.jpg" alt="">
-			<article class="header-btn-box">
-				<!-- <a class="btn btn-lg btn-success" href="#">SIGN UP NOW</a> -->
-			</article>			
-			<!-- <img class="img-responsive" src="<?php echo $page_header_image; ?>" alt="tiana img"> -->
-		<?php endif; ?>
-	
-
-	</header>
 
 
 

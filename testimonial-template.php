@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all pages.
- *
+ * Template Name: Testimonials 
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -15,17 +15,16 @@
 get_header(); ?>
 <section class="container">
 <!-- <h1>I am real praise</h1> -->
-	<div id="primary" class="content-area col-md-12 col-lg-12">
+	<div id="primary" class="content-area col-md-8 col-lg-8">
+	
 		<main id="main" class="site-main" role="main">
 
 		<?php
 
 
-// echo 'Client Des: <h1>' . $client_designation . '</h1>';	
-		 
 		$args = array(
 		    // 'category_name' => 'news',
-			'post_type'              => 'praises',
+			'post_type'      => 'praises',
 		    'posts_per_page' => -1
 		);
 		 
@@ -50,11 +49,11 @@ get_header(); ?>
 			     	<?php if ( has_post_thumbnail() ) : ?>
 
 
-				        <div class="col-md-2 col-lg-2">
+				        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
 			    				<?php the_post_thumbnail('thumbnail', array('class' => 'img-circle')); ?>
 				        </div>
 
-			         	<div class="col-md-10 col-md-10">
+			         	<div class="col-xs-12 col-sm-9 col-md-10 col-md-10">
 
 		         	<?php else : ; ?>
 		         	
@@ -91,11 +90,11 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<!-- <div class="sidebar col-md-4 col-md-4"> -->
+	<div class="sidebar col-md-4 col-md-4">
 
-		<?php //get_sidebar();  ?>
+		<?php get_sidebar();  ?>
 		
-	<!-- </div> -->
+	</div>
 </section> <!-- End Container -->	
 <?php
 get_footer();

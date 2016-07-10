@@ -10,123 +10,67 @@
  */
 
 ?>
-<?php wp_footer(); ?>
 
 
-		<div class="footer-container">
+<div class="footer-container">
 
-			<footer id="footer-main" class="footer-main">
+	<footer id="footer-main" class="footer-main">
 
-			<section class="footer-body  container-fluid">
-				
-				<div class="row">
-				
+	<section class="footer-body  container">
+		
+		<div class="row">
+		
 
-					<article class="img-box col-md-3">
+			<article class="img-box col-md-12 col-lg-12">
 
-						<aside id="text-2" class="widget-footer-container widget_text">
+				<aside id="text-2" class="widget-footer-container widget_text">
 
-							<?php 
-								if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
-									return;
-								}
+					<?php 
+						if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
+							return;
+						}
 
-								dynamic_sidebar( 'footer-sidebar-1' ); 
+						dynamic_sidebar( 'footer-sidebar-1' ); 
 
-							?>
+					?>
 
-					   	</aside>
+			   	</aside>
 
-					
-					</article>
+			</article>
 
-					<article class="img-box col-md-3">
+	</div> <!-- TOP 2 FOOTER WIDGET CONTAINER -->
+	<hr>
+	<div id="footer-menu" class="row">
+					<article class="img-box col-md-12">
 
-						<aside id="nav_menu-2" class="widget-footer-container widget_nav_menu">
+			    <aside id="recent-posts-2" class="widget-footer-container widget_recent_entries">
 
-							<?php 
+			    	<?php 
 
-								if ( ! is_active_sidebar( 'footer-sidebar-2' ) ) {
-									return;
-								}
+						if ( ! is_active_sidebar( 'footer-sidebar-3' ) ) {
+							return;
+						}
 
-								dynamic_sidebar( 'footer-sidebar-2' ); 
+						dynamic_sidebar( 'footer-sidebar-3' ); 
 
-							?>
-					      
-					    </aside>
+					?>
+			      
+			   	</aside>
+			
+			</article>
+	</div> <!-- FOOTER MENU ENDS -->
 
-					</article>
-		 
-					<article class="img-box col-md-3">
+	</section> <!-- FOOTER BODY ENDS -->
+	<div id="copyright" class="copyright">
+		<p class="text-center">All Rights Reserved Dan Netting &copy; <?php echo date('Y'); ?>. </p>
+	</div>
 
-						<aside id="nav_menu-2" class="widget-footer-container widget_nav_menu">
-
-							<?php 
-
-								if ( ! is_active_sidebar( 'footer-sidebar-3' ) ) {
-									return;
-								}
-
-								dynamic_sidebar( 'footer-sidebar-3' ); 
-
-							?>
-					      
-					    </aside>
-
-					</article>
-					<article class="img-box col-md-3">
-
-						<aside id="nav_menu-2" class="widget-footer-container widget_nav_menu">
-
-							<?php 
-
-								if ( ! is_active_sidebar( 'footer-sidebar-4' ) ) {
-									return;
-								}
-
-								dynamic_sidebar( 'footer-sidebar-4' ); 
-
-							?>
-					      
-					    </aside>
-
-					</article>		 
-
-			</div> <!-- TOP 2 FOOTER WIDGET CONTAINER -->
-			<hr>
-			<div id="footer-menu" class="row">
-							<article class="img-box col-md-12">
-
-					    <aside id="recent-posts-2" class="widget-footer-container widget_recent_entries">
-
-					    	<?php 
-
-								if ( ! is_active_sidebar( 'footer-sidebar-5' ) ) {
-									return;
-								}
-
-								dynamic_sidebar( 'footer-sidebar-5' ); 
-
-							?>
-					      
-					   	</aside>
-					
-					</article>
-			</div> <!-- FOOTER MENU ENDS -->
-
-			</section> <!-- FOOTER BODY ENDS -->
-
-
-		</footer>
-		</div> <!-- FOOTER CONTAINER ENDED -->
-
-		<div id="copyright" class="copyright">
-			<p class="text-center">All Rights Reserved Tylore Christensen &copy; <?php echo date('Y'); ?>. <a class="hide" href="www.htmlfivedev.com">HTMLfiveDev.com</a></p>
-		</div>
+</footer>
+</div> <!-- FOOTER CONTAINER ENDED -->
 
 	</div> <!-- End of id="content" class="site-content" -->
 </div> <!-- End of id="page" class="site" -->
 
+<?php wp_footer(); ?>
 </body>
 </html>

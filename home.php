@@ -27,7 +27,10 @@ get_header(); ?>
 
 	<div class="wrapper container-fluid">
 		
-		<h2>LET'S TALK ABOUT REAL STYLES</h2>
+		<h2 class="text-center">
+			GET INTO ACTION </br>
+			CLICK ON AN OPION BELOW
+		</h2>
 
 		<!-- <h3>
 			It's time to learn HOW to set up your OWN online systems.<br>
@@ -40,30 +43,30 @@ get_header(); ?>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 				<!-- <a href="#" target="_blank"> -->
 				<a href="#" target="_blank">
-					<img class="img-responsive img-circle wow bounceInLeft" src="/wp-content/uploads/2016/06/life-style.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
-					<article class="text-content"><br>
+					<img class="img-responsive wow bounceInLeft" src="/wp-content/uploads/2016/07/LifeatleanFreeGuide.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<!-- <article class="text-content"><br>
 						LIFE STYLES
-					</article>
+					</article> -->
 				</a>
 
 			</figure>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 
 				<a href="#" target="_blank">
-					<img class="img-responsive img-circle wow zoomIn" src="/wp-content/uploads/2016/06/body-style.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
-					<article class="text-content"><br>
+					<img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/07/Lifeatleantrainingresources.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+				<!-- 	<article class="text-content"><br>
 						BODY STYLES
-					</article>
+					</article> -->
 				</a>
 
 			</figure>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 
 				<a href="#" target="_blank">
-					<img class="img-responsive img-circle wow bounceInRight" src="/wp-content/uploads/2016/06/biz-style.jpg" data-wow-duration="1s" data-wow-delay="0s" alt="">
-					<article class="text-content"><br>
+					<img class="img-responsive wow bounceInRight" src="/wp-content/uploads/2016/07/LifeatleanJoinCommunity.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<!-- <article class="text-content"><br>
 						BUSINESS STYLES
-					</article>
+					</article> -->
 				</a>
 
 			</figure>						
@@ -158,41 +161,41 @@ get_header(); ?>
 
 </section>
 
-<section class="below-blog-block-2 hide">
+<section class="below-blog-block-2">
 
 		<div class="wrapper container-fluid">
 		
-		<h2> READY TO LEARN? LET'S DO THIS! </h2>
+		<h2> WORK WITH ME </h2>
 
 		<div class="icon-content">
 
-			<figure class="col-sm-4 col-md-4 col-md-lg">
+			<figure class="col-sm-3 col-md-3 col-lg-3">
 				<a href="http://tianagustafson.teachable.com/courses/goals-with-soul" target="_blank">
-					<img class="img-responsive wow bounceInLeft" src="/wp-content/uploads/2016/06/TianaNEWJuneAutomateDominate.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive wow bounceInLeft" src="/wp-content/uploads/2016/07/LifeatLeanEssentialRidingSkills-650.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
 				</a>
 				
 			</figure>
-			<figure class="col-sm-4 col-md-4 col-md-lg">
+			<figure class="col-sm-6 col-md-6 col-lg-6">
 				<a href="http://tianagustafson.teachable.com/courses/bullseye-funnels" target="_blank">
-					<img class="img-responsive wow zoomInDown" src="/wp-content/uploads/2016/06/TianaNEWJuneBullseyeFunnels.png" data-wow-duration="2s" data-wow-delay="s" alt="">
+					<img class="img-responsive wow zoomInDown" src="/wp-content/uploads/2016/07/LifeatleanTrackRiderTraining-650.png" data-wow-duration="2s" data-wow-delay="s" alt="">
 				</a>
 			</figure>
-			<figure class="col-sm-4 col-md-4 col-md-lg">
+			<figure class="col-sm-3 col-md-3 col-lg-3">
 				<a href="http://tianagustafson.teachable.com/courses/goals-with-soul" target="_blank">
-					<img class="img-responsive wow bounceInRight" src="/wp-content/uploads/2016/06/TianaNEWJuneGoalswithsoul.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive wow bounceInRight" src="/wp-content/uploads/2016/07/LifeAtLeanOneonOneConsulting-650.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
 				</a>
 			</figure>						
 
 		</div>
 
-		<article class="btn-holder text-center col-sm-12 col-md-12 col-lg-12">
+		<!-- <article class="btn-holder text-center col-sm-12 col-md-12 col-lg-12">
 
 			<a class="btn btn-lg btn-danger"  href="https://tianastar.leadpages.co/leadbox/145df2473f72a2%3A1497094e8b46dc/5655608640405504/" target="_blank">
 				YES! SHOW ME MORE!
 			</a>
 			<script data-leadbox="145df2473f72a2:1497094e8b46dc" data-url="https://tianastar.leadpages.co/leadbox/145df2473f72a2%3A1497094e8b46dc/5655608640405504/" data-config="%7B%7D" type="text/javascript" src="https://tianastar.leadpages.co/leadbox-1465587185.js"></script>
 
-		</article>
+		</article> -->
 
 	</div>
 	
