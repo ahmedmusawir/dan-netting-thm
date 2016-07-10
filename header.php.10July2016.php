@@ -90,6 +90,7 @@
 	
 	<header id="front-pg-header">
 
+		<?php if ( is_home() || is_single() || is_archive() || is_search() || is_404() ) : ?>
 			<!-- <img class="img-responsive hidden-xs" src="<?php echo $front_header_image; ?>" alt="tiana img"> -->
 			<img class="img-responsive hidden-xs" src="/wp-content/uploads/2016/07/header-image.jpg" alt="">
 			<img class="img-responsive visible-xs" src="/wp-content/uploads/2016/07/header-image-mobile.jpg" alt="">
@@ -99,49 +100,51 @@
 					  CLICK HERE TO SIGN UP!
 					</button>				
 			</article>
-	</header>
-			
-		<?php if ( is_home() || is_single() || is_archive() || is_search() || is_404() ) : ?>
 
-			<section class="top-form-bar">
-				<div class="container">
-					<article class="form-bar-content-holder">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-							<div class="form-bar-left-block">
-								<h2 class="form-bar-left-text">Sign Up and Get my POWER PROJECT For Free</h2>
-								<!-- <img class="img-responsive center-block" src="/wp-content/uploads/2016/06/Screen-Shot-2016-06-24-at-2.43.19-PM.png" alt=""> -->
-							</div>
-							<div class="form-bar-right-block">
-								<div class="form-bar-right-form-holder">
-									
-									<form id="header-form" class="form-inline" role="form">
-										<div class="form-group">
-										    <label for="name">FIRST NAME:</label>
-										    <input type="text" class="form-control" id="name" placeholder="" required>
-										</div>
-										<div class="form-group">
-										    <label for="email">EMAIL:</label>
-										    <input type="email" class="form-control" id="email" placeholder="" required>
-										</div>
-									
-										  <button id="submit" type="submit" class="btn btn-default">YES! I WANT IT!</button><br />
-									</form>
-
+	<section class="top-form-bar">
+		<div class="container">
+			<article class="form-bar-content-holder">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+					<div class="form-bar-left-block">
+						<h2 class="form-bar-left-text">Sign Up and Get my POWER PROJECT For Free</h2>
+						<!-- <img class="img-responsive center-block" src="/wp-content/uploads/2016/06/Screen-Shot-2016-06-24-at-2.43.19-PM.png" alt=""> -->
+					</div>
+					<div class="form-bar-right-block">
+						<div class="form-bar-right-form-holder">
+							
+							<form id="header-form" class="form-inline" role="form">
+								<div class="form-group">
+								    <label for="name">FIRST NAME:</label>
+								    <input type="text" class="form-control" id="name" placeholder="" required>
 								</div>
-							</div>
-						</div>	
-					</article>
-				</div>
-			</section>
+								<div class="form-group">
+								    <label for="email">EMAIL:</label>
+								    <input type="email" class="form-control" id="email" placeholder="" required>
+								</div>
+							
+								  <button id="submit" type="submit" class="btn btn-default">YES! I WANT IT!</button><br />
+							</form>
 
+						</div>
+					</div>
+				</div>	
+			</article>
+		</div>
+	</section>
+
+
+	
 		<?php else : ?>
-
-			<!-- <img class="img-responsive hidden-xs" src="<?php echo $front_header_image; ?>" alt="tiana img"> -->
-		
-
+			<img class="img-responsive hidden-xs" src="/wp-content/uploads/2016/07/header-image.jpg" alt="">
+			<img class="img-responsive visible-xs" src="/wp-content/uploads/2016/07/header-image-mobile.jpg" alt="">
+			<article class="header-btn-box">
+				<!-- <a class="btn btn-lg btn-success" href="#">SIGN UP NOW</a> -->
+			</article>			
+			<!-- <img class="img-responsive" src="<?php echo $page_header_image; ?>" alt="tiana img"> -->
 		<?php endif; ?>
 	
 
+	</header>
 
 
 <!-- THE MODAL CODE -->

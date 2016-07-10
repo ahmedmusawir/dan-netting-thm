@@ -37,7 +37,7 @@ body {
 	// padding-top: 85px;
 
 	h1, h2, h3, h4, h5, h6 {
-		// color: $tiana-primary !important;
+		color: $tiana-primary;
 	}
 
 	@media ( min-width: 992px ) {
@@ -56,6 +56,37 @@ body {
 		padding-top: 130px;
 	}	
 
+}
+
+#myModal {
+	.modal-content {
+		background-color: $tiana-primary;
+
+	}
+	.modal-header {
+	    padding: 15px;
+	    border-bottom: 0px solid #e5e5e5;
+	}
+	.modal-footer {
+	    padding: 15px;
+	    text-align: center;
+	    border-top: 0px solid #e5e5e5;
+
+	    .btn {
+	    	background-color: transparent;
+	    }
+	}
+	.modal-body {
+		.popup-text {
+			h4 {
+				color: white;
+			}
+			p {
+				color: white;
+				text-align: center;
+			}
+		}
+	}	
 }
 
 #content {
@@ -279,8 +310,10 @@ img {
  */
 .top-form-bar {
 	// @include background(linear-gradient( white, black ) left repeat);
+	
 	background-color: $tiana-primary;
-	padding-bottom: 2rem;
+	background: url('/wp-content/uploads/2016/07/grid-dark-bg-1.jpg') center center fixed;
+	padding-bottom: 5rem;
 
 	.form-bar-left-text {
 		font-size: 2.5rem;
@@ -342,7 +375,7 @@ img {
 
 	.header-btn-box {
 		position: absolute;
-		top: 27%;
+		top: 72%;
 		left: 20%;
 
 		.btn {
@@ -350,6 +383,11 @@ img {
 			border: 0px solid black;
 			font-family: 'Oswald', sans-serif;
 			font-style: italic;
+
+			&:hover {
+				color: black;
+				background-color: $tiana-primary;
+			}
 
 			@media ( min-width: 1180px ) {
 				padding-top: 2rem;
@@ -369,31 +407,31 @@ img {
 
 
 		@media ( min-width: 363px ) {
-			top: 30%;
+			top: 75%;
 		}
 		@media ( min-width: 404px ) {
-			top: 35%;
+			top: 75%;
 			left: 30%;
 		}		
 		@media ( min-width: 522px ) {
-			top: 40%;
+			top: 75%;
 			left: 30%;
 		}	
 		@media ( min-width: 620px ) {
-			top: 45%;
+			top: 75%;
 			left: 35%;
 		}	
 		@media ( min-width: 768px ) {
-			top: 45%;
+			top: 75%;
 			left: 60%;
 		}	
 		@media ( min-width: 975px ) {
-			top: 55%;
+			top: 75%;
 			left: 60%;
 		}	
 		@media ( min-width: 1180px ) {
-			top: 60%;
-			left: 60%;
+			top: 75%;
+			left: 55%;
 		}																	
 	}
 
@@ -549,6 +587,10 @@ img {
 
 	  background-size: cover;
 
+	@media ( max-width: 800px ) {
+		
+		background: url('/wp-content/uploads/2016/07/LifeAtLean1-block-3-bg.jpg');
+	}
 
 
 	.btn-holder {
@@ -644,11 +686,11 @@ img {
 
 			// font-size: 3rem;
 			a {
-				color: darken( $tiana-teal, 10% );
+				color: darken( $tiana-black, 10% );
 				font-weight: 600;
 
 				&:hover {
-					color: $tiana-teal;
+					color: $tiana-primary;
 				}
 			}
 
@@ -681,6 +723,8 @@ img {
 			font-weight: 700;
 			border-bottom: 1px solid $tiana-primary;
 			color: darken( $tiana-primary, 0% );
+			font-family: 'Oswald', sans-serif !important;
+			font-style: italic;
 		}
 
 }
@@ -698,12 +742,14 @@ img {
 	margin-right: 0rem;
 	margin-left: .15rem;
 	font-family: 'Raleway', sans-serif;
+	// border: 1px solid red;
 	
 	.entry-header {
 
 		h1, h2 {
 			font-family: 'Raleway', sans-serif;
 			text-transform: uppercase;
+			text-align: center;
 			
 			font-size: 2rem;
 			font-weight: 700;
@@ -843,7 +889,7 @@ img {
 			font-size: 2rem;
 			font-weight: 300;
 			font-style: italic;
-			color: $tiana-teal;
+			color: $tiana-primary;
 
 			@media ( max-width: 550px ) {
 				display: none;
@@ -862,7 +908,7 @@ img {
 
 	h1, h2, h3, h4, h5 {
 		color: lighten( $tiana-primary, 5% );
-		font-size: 3.5rem;
+		// font-size: 3.5rem;
 		padding-left: 2.7rem;
 		padding-right: 2rem;
 		margin-top: 5rem;
@@ -879,9 +925,10 @@ img {
 
 		h1 {
 			font-family: 'Raleway', sans-serif;
-			font-variant: small-caps;
+			// font-variant: small-caps;
+			text-transform: uppercase;
 			font-size: 4rem;
-			color: darken( $brand-primary, 10% );
+			color: darken( $tiana-primary, 5% );
 			padding-bottom: 1rem;
 			padding-right: 2rem;
 			text-align: center !important;
@@ -912,7 +959,7 @@ img {
 		padding-top: 2rem;
 		p {
 			// font-family: 'Poiret One', cursive;
-			font-family: 'Muli', sans-serif;
+			font-family: 'Raleway', sans-serif;
 			font-size: 2rem;
 			font-variant: 400;
 			color: lighten( $tiana-gray, 15% );
@@ -1167,7 +1214,7 @@ img {
 
 .contact-header {
 	h1 {
-		font-size: 5rem;
+		// font-size: 5rem;
 	}
 } 
 .entry-content {
@@ -1509,6 +1556,7 @@ img {
 	margin-bottom: 1rem;
 	padding-top: 3rem;
 	padding-bottom: 2rem;
+	// background-color: $dan-light-blue;
 	// padding-left: 2rem;
 	// padding-right: 2rem;
 
@@ -1525,7 +1573,10 @@ img {
 		color: lighten( $tiana-gray, 40% );
 		padding-bottom: 2rem;
 		text-transform: uppercase;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		font-style: italic;
+		// font-family: 'Raleway', sans-serif;
 
 
 	}
@@ -1576,6 +1627,7 @@ img {
 			padding: 1rem;
 			font-weight: 300;
 			font-family: 'Raleway', sans-serif;
+			border-bottom: 1px solid $tiana-primary;
 			
 			@include transition(all 0.5s ease-in-out);
 

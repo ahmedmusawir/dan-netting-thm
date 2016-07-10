@@ -5923,6 +5923,8 @@ button.close {
     display: none !important; } }
 body {
   font-family: 'Raleway', sans-serif; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #6fa842; }
   @media (min-width: 992px) {
     body {
       padding-top: 100px; } }
@@ -5938,6 +5940,23 @@ body {
   @media (max-width: 450px) {
     body {
       padding-top: 130px; } }
+
+#myModal .modal-content {
+  background-color: #6fa842; }
+#myModal .modal-header {
+  padding: 15px;
+  border-bottom: 0px solid #e5e5e5; }
+#myModal .modal-footer {
+  padding: 15px;
+  text-align: center;
+  border-top: 0px solid #e5e5e5; }
+  #myModal .modal-footer .btn {
+    background-color: transparent; }
+#myModal .modal-body .popup-text h4 {
+  color: white; }
+#myModal .modal-body .popup-text p {
+  color: white;
+  text-align: center; }
 
 #content {
   font-family: 'Raleway', sans-serif;
@@ -6066,7 +6085,8 @@ img {
  */
 .top-form-bar {
   background-color: #6fa842;
-  padding-bottom: 2rem; }
+  background: url("/wp-content/uploads/2016/07/grid-dark-bg-1.jpg") center center fixed;
+  padding-bottom: 5rem; }
   .top-form-bar .form-bar-left-text {
     font-size: 2.5rem;
     color: white;
@@ -6109,13 +6129,16 @@ img {
   position: relative; }
   #front-pg-header .header-btn-box {
     position: absolute;
-    top: 27%;
+    top: 72%;
     left: 20%; }
     #front-pg-header .header-btn-box .btn {
       background-color: black;
       border: 0px solid black;
       font-family: 'Oswald', sans-serif;
       font-style: italic; }
+      #front-pg-header .header-btn-box .btn:hover {
+        color: black;
+        background-color: #6fa842; }
       @media (min-width: 1180px) {
         #front-pg-header .header-btn-box .btn {
           padding-top: 2rem;
@@ -6131,31 +6154,31 @@ img {
           font-size: 3rem; } }
     @media (min-width: 363px) {
       #front-pg-header .header-btn-box {
-        top: 30%; } }
+        top: 75%; } }
     @media (min-width: 404px) {
       #front-pg-header .header-btn-box {
-        top: 35%;
+        top: 75%;
         left: 30%; } }
     @media (min-width: 522px) {
       #front-pg-header .header-btn-box {
-        top: 40%;
+        top: 75%;
         left: 30%; } }
     @media (min-width: 620px) {
       #front-pg-header .header-btn-box {
-        top: 45%;
+        top: 75%;
         left: 35%; } }
     @media (min-width: 768px) {
       #front-pg-header .header-btn-box {
-        top: 45%;
+        top: 75%;
         left: 60%; } }
     @media (min-width: 975px) {
       #front-pg-header .header-btn-box {
-        top: 55%;
+        top: 75%;
         left: 60%; } }
     @media (min-width: 1180px) {
       #front-pg-header .header-btn-box {
-        top: 60%;
-        left: 60%; } }
+        top: 75%;
+        left: 55%; } }
 
 /*=======================================
 =            Home page style            =
@@ -6242,6 +6265,9 @@ img {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media (max-width: 800px) {
+    .below-blog-block-2 {
+      background: url("/wp-content/uploads/2016/07/LifeAtLean1-block-3-bg.jpg"); } }
   .below-blog-block-2 .btn-holder {
     padding-top: 4rem;
     padding-bottom: 7rem; }
@@ -6304,10 +6330,10 @@ img {
   .site-main .navigation .nav-links {
     padding-bottom: 1.5rem; }
     .site-main .navigation .nav-links a {
-      color: #ee645f;
+      color: black;
       font-weight: 600; }
       .site-main .navigation .nav-links a:hover {
-        color: #F3918D; }
+        color: #6fa842; }
     .site-main .navigation .nav-links::after {
       clear: both;
       content: "";
@@ -6327,7 +6353,9 @@ img {
   font-size: 2.5rem;
   font-weight: 700;
   border-bottom: 1px solid #6fa842;
-  color: #6fa842; }
+  color: #6fa842;
+  font-family: 'Oswald', sans-serif !important;
+  font-style: italic; }
 
 /**
  *
@@ -6343,6 +6371,7 @@ img {
   .blog-post .entry-header h1, .blog-post .entry-header h2 {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
+    text-align: center;
     font-size: 2rem;
     font-weight: 700;
     margin-top: -1rem; }
@@ -6445,7 +6474,7 @@ img {
   font-size: 2rem;
   font-weight: 300;
   font-style: italic;
-  color: #F3918D; }
+  color: #6fa842; }
   @media (max-width: 550px) {
     .single-page #single-post-nav h2 {
       display: none; } }
@@ -6457,7 +6486,6 @@ img {
       display: none; } }
 .single-page h1, .single-page h2, .single-page h3, .single-page h4, .single-page h5 {
   color: #7bb84b;
-  font-size: 3.5rem;
   padding-left: 2.7rem;
   padding-right: 2rem;
   margin-top: 5rem; }
@@ -6465,9 +6493,9 @@ img {
   display: none; }
 .single-page .entry-header h1 {
   font-family: 'Raleway', sans-serif;
-  font-variant: small-caps;
+  text-transform: uppercase;
   font-size: 4rem;
-  color: #40b1aa;
+  color: #63963b;
   padding-bottom: 1rem;
   padding-right: 2rem;
   text-align: center !important; }
@@ -6485,7 +6513,7 @@ img {
 .single-page .only-text {
   padding-top: 2rem; }
   .single-page .only-text p {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     font-variant: 400;
     color: #4a4a4a; }
@@ -6664,9 +6692,6 @@ img {
  * Contact Page Styles
  *
  */
-.contact-header h1 {
-  font-size: 5rem; }
-
 .entry-content .only-text {
   padding-top: 0; }
 .entry-content .contact-top-row h3 {
@@ -6888,7 +6913,9 @@ img {
     color: #8a8a8a;
     padding-bottom: 2rem;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif; }
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-style: italic; }
   .widget .srp-post-content {
     color: #7d7d7d; }
   .widget .custom-widget h3 {
@@ -6938,6 +6965,7 @@ img {
       padding: 1rem;
       font-weight: 300;
       font-family: 'Raleway', sans-serif;
+      border-bottom: 1px solid #6fa842;
       -webkit-transition: all 0.5s ease-in-out;
       -moz-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }

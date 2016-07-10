@@ -43,7 +43,7 @@ get_header(); ?>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 				<!-- <a href="#" target="_blank"> -->
 				<a href="#" target="_blank">
-					<img class="img-responsive wow bounceInLeft" src="/wp-content/uploads/2016/07/LifeatleanFreeGuide.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive wow bounceInLeft" src="/wp-content/uploads/2016/07/LifeatleanFreeGuide.png" data-wow-duration="1.5s" data-wow-delay="0s" alt="">
 					<!-- <article class="text-content"><br>
 						LIFE STYLES
 					</article> -->
@@ -53,7 +53,7 @@ get_header(); ?>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 
 				<a href="#" target="_blank">
-					<img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/07/Lifeatleantrainingresources.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/07/Lifeatleantrainingresources.png" data-wow-duration="2s" data-wow-delay="0s" alt="">
 				<!-- 	<article class="text-content"><br>
 						BODY STYLES
 					</article> -->
@@ -63,7 +63,7 @@ get_header(); ?>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 
 				<a href="#" target="_blank">
-					<img class="img-responsive wow bounceInRight" src="/wp-content/uploads/2016/07/LifeatleanJoinCommunity.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+					<img class="img-responsive wow bounceInRight" src="/wp-content/uploads/2016/07/LifeatleanJoinCommunity.png" data-wow-duration="1.5s" data-wow-delay="0s" alt="">
 					<!-- <article class="text-content"><br>
 						BUSINESS STYLES
 					</article> -->
@@ -170,19 +170,19 @@ get_header(); ?>
 		<div class="icon-content">
 
 			<figure class="col-sm-3 col-md-3 col-lg-3">
-				<a href="http://tianagustafson.teachable.com/courses/goals-with-soul" target="_blank">
-					<img class="img-responsive wow bounceInLeft" src="/wp-content/uploads/2016/07/LifeatLeanEssentialRidingSkills-650.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+				<a href="#" target="_blank">
+					<img class="img-responsive center-block wow bounceInLeft" src="/wp-content/uploads/2016/07/LifeatLeanEssentialRidingSkills-650.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
 				</a>
 				
 			</figure>
 			<figure class="col-sm-6 col-md-6 col-lg-6">
-				<a href="http://tianagustafson.teachable.com/courses/bullseye-funnels" target="_blank">
-					<img class="img-responsive wow zoomInDown" src="/wp-content/uploads/2016/07/LifeatleanTrackRiderTraining-650.png" data-wow-duration="2s" data-wow-delay="s" alt="">
+				<a href="#" target="_blank">
+					<img class="img-responsive center-block wow zoomInDown" src="/wp-content/uploads/2016/07/LifeatleanTrackRiderTraining-650.png" data-wow-duration="2s" data-wow-delay="s" alt="">
 				</a>
 			</figure>
 			<figure class="col-sm-3 col-md-3 col-lg-3">
-				<a href="http://tianagustafson.teachable.com/courses/goals-with-soul" target="_blank">
-					<img class="img-responsive wow bounceInRight" src="/wp-content/uploads/2016/07/LifeAtLeanOneonOneConsulting-650.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
+				<a href="#" target="_blank">
+					<img class="img-responsive center-block wow bounceInRight" src="/wp-content/uploads/2016/07/LifeAtLeanOneonOneConsulting-650.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
 				</a>
 			</figure>						
 

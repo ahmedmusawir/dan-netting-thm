@@ -25,7 +25,7 @@
 
 				<div class="featured-img">
 				
-					<a href="<?php the_permalink(); ?>" title=""><img class="img-responsive" src="/wp-content/uploads/2016/06/TianaNEWJuneBlock_no-featured-version.jpg" alt=""></a>
+					<a href="<?php the_permalink(); ?>" title=""><img class="img-responsive" src="/wp-content/uploads/2016/07/LifeAtLean1-place-holder-img.jpg" alt=""></a>
 
 				</div>				
 
