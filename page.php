@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-<section class="container-fluid">
+<section class="container">
 <!-- <h1>I am page</h1> -->
 	<div id="primary" class="content-area col-md-8 col-lg-8">
 		<main id="main" class="site-main" role="main">

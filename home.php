@@ -25,11 +25,11 @@ get_header(); ?>
 
 <section class="above-blog-block-2">
 
-	<div class="wrapper container-fluid">
+	<div class="wrapper container">
 		
 		<h2 class="text-center">
 			GET INTO ACTION </br>
-			CLICK ON AN OPION BELOW
+			CLICK ON AN OPTION BELOW
 		</h2>
 
 		<!-- <h3>
@@ -41,32 +41,22 @@ get_header(); ?>
 		<div class="icon-content">
 
 			<figure class="col-sm-4 col-md-4 col-md-lg">
-				<!-- <a href="#" target="_blank"> -->
 				<a href="#" target="_blank">
-					<img class="img-responsive wow bounceInLeft" src="/wp-content/uploads/2016/07/LifeatleanFreeGuide.png" data-wow-duration="1.5s" data-wow-delay="0s" alt="">
-					<!-- <article class="text-content"><br>
-						LIFE STYLES
-					</article> -->
+					<img class="img-responsive wow zoomIn center-block" src="/wp-content/uploads/2016/07/LifeatleanFreeGuide.png" data-wow-duration="1.5s" data-wow-delay="0s" alt="">
 				</a>
 
 			</figure>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 
 				<a href="#" target="_blank">
-					<img class="img-responsive wow zoomIn" src="/wp-content/uploads/2016/07/Lifeatleantrainingresources.png" data-wow-duration="2s" data-wow-delay="0s" alt="">
-				<!-- 	<article class="text-content"><br>
-						BODY STYLES
-					</article> -->
+					<img class="img-responsive wow zoomIn center-block" src="/wp-content/uploads/2016/07/Lifeatleantrainingresources.png" data-wow-duration="2s" data-wow-delay="0s" alt="">
 				</a>
 
 			</figure>
 			<figure class="col-sm-4 col-md-4 col-md-lg">
 
 				<a href="#" target="_blank">
-					<img class="img-responsive wow bounceInRight" src="/wp-content/uploads/2016/07/LifeatleanJoinCommunity.png" data-wow-duration="1.5s" data-wow-delay="0s" alt="">
-					<!-- <article class="text-content"><br>
-						BUSINESS STYLES
-					</article> -->
+					<img class="img-responsive wow zoomIn center-block" src="/wp-content/uploads/2016/07/LifeatleanJoinCommunity.png" data-wow-duration="1.5s" data-wow-delay="0s" alt="">
 				</a>
 
 			</figure>						
@@ -79,7 +69,7 @@ get_header(); ?>
 
 <!-- BLOG BLOCK -->
 
-<section class="container-fluid">
+<section class="container">
 
 	<div id="primary" class="content-area col-md-8 col-lg-8">
 		<main id="main" class="site-main" role="main">
@@ -169,33 +159,24 @@ get_header(); ?>
 
 		<div class="icon-content">
 
-			<figure class="col-sm-3 col-md-3 col-lg-3">
+			<figure class="col-sm-3 col-md-3 col-lg-3 left-img">
 				<a href="#" target="_blank">
 					<img class="img-responsive center-block wow bounceInLeft" src="/wp-content/uploads/2016/07/LifeatLeanEssentialRidingSkills-650.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
 				</a>
 				
 			</figure>
-			<figure class="col-sm-6 col-md-6 col-lg-6">
+			<figure class="col-sm-6 col-md-6 col-lg-6 center-img">
 				<a href="#" target="_blank">
 					<img class="img-responsive center-block wow zoomInDown" src="/wp-content/uploads/2016/07/LifeatleanTrackRiderTraining-650.png" data-wow-duration="2s" data-wow-delay="s" alt="">
 				</a>
 			</figure>
-			<figure class="col-sm-3 col-md-3 col-lg-3">
+			<figure class="col-sm-3 col-md-3 col-lg-3 right-img">
 				<a href="#" target="_blank">
 					<img class="img-responsive center-block wow bounceInRight" src="/wp-content/uploads/2016/07/LifeAtLeanOneonOneConsulting-650.png" data-wow-duration="1s" data-wow-delay="0s" alt="">
 				</a>
 			</figure>						
 
 		</div>
-
-		<!-- <article class="btn-holder text-center col-sm-12 col-md-12 col-lg-12">
-
-			<a class="btn btn-lg btn-danger"  href="https://tianastar.leadpages.co/leadbox/145df2473f72a2%3A1497094e8b46dc/5655608640405504/" target="_blank">
-				YES! SHOW ME MORE!
-			</a>
-			<script data-leadbox="145df2473f72a2:1497094e8b46dc" data-url="https://tianastar.leadpages.co/leadbox/145df2473f72a2%3A1497094e8b46dc/5655608640405504/" data-config="%7B%7D" type="text/javascript" src="https://tianastar.leadpages.co/leadbox-1465587185.js"></script>
-
-		</article> -->
 
 	</div>
 	

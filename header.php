@@ -103,7 +103,7 @@
 			
 		<?php if ( is_home() || is_single() || is_archive() || is_search() || is_404() ) : ?>
 
-			<section class="top-form-bar">
+			<section class="top-form-bar hide">
 				<div class="container">
 					<article class="form-bar-content-holder">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
